@@ -105,7 +105,7 @@ def _parse_time(t, formats):
 
 
 def _decode_linux_time(mtime):
-    return _parse_time(mtime, formats=["%b %d %Y", "%b %d %H:%M"])
+    return _parse_time(mtime, formats=["%b %d %Y", "%b %d  %Y", "%b %d %H:%M"])
 
 
 def decode_linux(line, match):
